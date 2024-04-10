@@ -24,7 +24,7 @@
 &kp GRAVE  &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                               &kp N6    &kp N7  &kp N8          &kp N9     &kp N0    &kp BSPC
 &kp ESC    &kp Q   &kp W      &kp E     &kp R     &kp T                                &kp Y     &kp U   &kp I           &kp O      &kp P     &kp DEL
 &kp TAB    &kp A   &kp S      &kp D     &kp F     &kp G                                &kp H     &kp J   &kp K           &kp L      &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X      &kp C     &kp V     &kp B   &kp C_MUTE  &kp PRINTSCREEN  &kp N     &kp M   &kp COMMA       &kp DOT    &kp FSLH  &kp HASH
+&kp LSHFT  &kp Z   &kp X      &kp C     &kp V     &kp B   &kp C_MUTE  &kp PRINTSCREEN  &kp N     &kp M   &kp COMMA       &kp DOT    &kp FSLH  &kp BACKSLASH
                    &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &kp SPACE   &kp ENTER        &kp LEFT  &kp UP  &kp DOWN_ARROW  &kp RIGHT
             >;
 
@@ -41,11 +41,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1  &kp F2             &kp F3         &kp F4                &kp F5  &kp F6                  &kp F7     &kp F8    &kp F9        &kp F10           &kp F11            &kp F12
-&trans  &caps_word         &kp PAGE_UP    &kp C_AL_MY_COMPUTER  &trans  &trans                  &kp MINUS  &kp PLUS  &kp KP_EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-&trans  &kp K_VOLUME_DOWN  &kp PAGE_DOWN  &kp K_VOL_UP2         &trans  &trans                  &kp UNDER  &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans             &trans         &trans                &trans  &trans  &trans  &trans  &trans     &trans    &trans        &trans            &kp BACKSLASH      &kp PIPE
-                           &trans         &trans                &trans  &trans  &trans  &trans  &trans     &trans    &trans        &trans
+&kp F1      &kp F2        &kp F3        &kp F4                &kp F5        &kp F6                        &kp F7     &kp F8              &kp F9        &kp F10           &kp F11            &kp F12
+&bt BT_CLR  &caps_word    &trans        &kp C_AL_MY_COMPUTER  &trans        &trans                        &kp MINUS  &kp PLUS            &kp KP_EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+&trans      &kp CAPSLOCK  &trans        &trans                &trans        &trans                        &kp UNDER  &trans              &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans     &kp K_CONTEXT_MENU  &trans        &trans            &kp BACKSLASH      &kp PIPE
+                          &trans        &trans                &trans        &trans        &trans  &trans  &trans     &trans              &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
